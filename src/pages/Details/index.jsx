@@ -1,13 +1,17 @@
 import { DetailsContainer } from "./style";
+import { Link } from "react-router-dom";
 
 import {FiArrowLeft} from 'react-icons/fi';
 
-import { Link } from "react-router-dom";
+import {Header} from '../../components/Header';
 
 export function Details() {
   return (
     <DetailsContainer>
-      <Link to="/"><FiArrowLeft/>Voltar</Link>
+      <Header />
+     
     </DetailsContainer>
   );
 }
+
+//<Link to="/"><FiArrowLeft/>Voltar</Link>

@@ -5,7 +5,7 @@ export default {
 
     TEXT: '#948F99',
 
-    BUTTONS: '#FF859B',
+    PINK: '#FF859B',
 
     WHITE: '#FFFFFF',
 
