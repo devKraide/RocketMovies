@@ -4,28 +4,37 @@ import { Link } from "react-router-dom";
 export const HeaderContainer = styled.header`
   grid-area: header;
 
-  height: 105px;
+  height: 155px;
   width: 100%;
-
+  
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: ${(props) => props.theme.COLORS.PINK};
+  border-bottom-color: ${({theme})=> theme.COLORS.PINK};
 
   display: flex;
-  align-items: center; /* Alinha os itens verticalmente ao centro */
   justify-content: space-between;
+  align-items: center;
 
-  padding: 20px 80px;
+  padding: 0 120px;
+
+  gap: 64px;
+
+  > h1{
+    line-height: 32px;
+    color: ${({theme})=> theme.COLORS.PINK};
+  }
 `;
 
 export const Profile = styled(Link)`
   display: flex;
   align-items: center;
+  gap: 9px;
 
   > img {
     width: 56px;
     height: 56px;
     border-radius: 50%;
+    border: 1px solid ${({ theme }) => theme.COLORS.TEXT};
   }
 
   > div {
@@ -33,36 +42,18 @@ export const Profile = styled(Link)`
     flex-direction: column;
     margin-left: 16px;
     line-height: 24px;
+    align-items: flex-end;
+
 
     span {
       font-size: 14px;
-      color: ${({ theme }) => theme.COLORS.WHITE};
+      color: ${({ theme }) => theme.COLORS.TEXT};
     }
 
     strong {
       font-size: 18px;
       color: ${({ theme }) => theme.COLORS.WHITE};
+      white-space: nowrap;
     }
   }
-`;
-
-export const SearchInput = styled.input`
-  height: 40px;
-  padding: 0 12px;
-  border-radius: 8px;
-  border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_2};
-  color: ${({ theme }) => theme.COLORS.WHITE};
-  margin-right: 20px; /* Adiciona espaçamento à direita do input */
-
-  &::placeholder {
-    color: ${({ theme }) => theme.COLORS.TEXT};
-  }
-`;
-
-export const HeaderContent = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 20px; /* Adiciona espaçamento entre os itens */
-  width: 100%;
 `;

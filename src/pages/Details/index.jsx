@@ -9,7 +9,6 @@ export function Details() {
   return (
     <DetailsContainer>
       <Header />
-     
     </DetailsContainer>
   );
 }

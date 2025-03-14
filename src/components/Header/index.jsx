@@ -5,16 +5,17 @@ import { Input } from "../Input";
 export function Header() {
   return (
     <HeaderContainer>
+      
       <h1>RocketMovies</h1>
 
       <Input placeholder="Search title" />
-
 
       <Profile>
         <div>
           <strong>
             Nicolas Kraide
           </strong>
+          
           <span>
             logout
           </span>
