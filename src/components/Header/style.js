@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: ${({theme})=> theme.COLORS.PINK};
+  border-bottom-color: ${({theme})=> theme.COLORS.TEXT};
 
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,6 @@ export const HeaderContainer = styled.header`
 export const Profile = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 9px;
 
   > img {
     width: 56px;
@@ -40,7 +39,7 @@ export const Profile = styled(Link)`
   > div {
     display: flex;
     flex-direction: column;
-    margin-left: 16px;
+    margin-right: 16px;
     line-height: 24px;
     align-items: flex-end;
 
