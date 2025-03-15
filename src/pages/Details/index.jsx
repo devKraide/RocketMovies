@@ -12,7 +12,7 @@ export function Details() {
       <Header Title="Filmes"/>
       
       <main>
-      <Title/>
+      <Title title="Interestellar"/>
       </main>
 
 

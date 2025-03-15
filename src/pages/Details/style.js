@@ -14,7 +14,7 @@ export const DetailsContainer = styled.div`
     margin-top: 40px;
     grid-area: content;
     overflow-y: auto;
-    padding: 64px 0;
+    padding: 64px 120px;
 
     /* Scrollbar styling */
     &::-webkit-scrollbar {

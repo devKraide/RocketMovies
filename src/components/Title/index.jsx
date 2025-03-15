@@ -1,10 +1,15 @@
 import { FiArrowLeft } from 'react-icons/fi';
-import { TitleContainer   } from './style';
+import { TitleContainer, BackButton } from './style';
 
-export function Title () {
+export function Title ({title}) {
   return (
     <TitleContainer>
-      <h1>Filmes</h1>
+       <BackButton to="/">
+        <FiArrowLeft/>
+        <span>Voltar</span>
+       </BackButton>
+
+      <h1>{title}</h1>
     </TitleContainer>
   )
 };
