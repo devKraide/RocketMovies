@@ -18,9 +18,10 @@ export const DetailsContainer = styled.div`
 
     .info {
       display: flex;
-      align-items: center;
       gap: 19px;
-      margin-bottom: 24px;
+      .rating {
+        margin-top: 45px;
+      }
     }
 
 
