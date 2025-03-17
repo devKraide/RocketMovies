@@ -16,7 +16,14 @@ export const DetailsContainer = styled.div`
     overflow-y: auto;
     padding: 64px 120px;
 
-    /* Scrollbar styling */
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      margin-bottom: 24px;
+    }
+
+
     &::-webkit-scrollbar {
       width: 8px;
     }
